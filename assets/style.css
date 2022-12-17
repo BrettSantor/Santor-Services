@@ -41,9 +41,9 @@ padding: 30px 0;
     color: rgb(214, 213, 212);
 }
 
-h3 {
+h2 {
     font-weight: bolder;
-    text-shadow: -1px 1 white;
+    text-shadow: -1px 1px white;
 }
 
 .nice {
@@ -111,8 +111,11 @@ nav ul {
 .card-3 {
     padding: 1rem 0;
     flex: 1;
-    background-color: blueviolet;
+    background-image: linear-gradient(to bottom right, rgb(14, 33, 48), slategray);
     height: 300px;
+    color: aliceblue;
+    text-shadow: -1px 1px 0 #000;
+    text-align: center;
 }
 .card-4 {
     padding: 1rem 0;
