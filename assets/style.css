@@ -26,6 +26,7 @@ header p {
 main {
  max-width: 100%;
  margin: 10px auto;
+ background-color: rgb(14, 33, 48);
 }
 
 
@@ -42,6 +43,7 @@ padding: 30px 0;
 
 h3 {
     font-weight: bolder;
+    text-shadow: -1px 1 white;
 }
 
 .nice {
@@ -57,6 +59,7 @@ nav ul {
     justify-content: space-evenly;
     list-style-type: none;
     margin: 20px;
+    text-shadow: -1px 1px 0 white;
   
 
 }
@@ -73,7 +76,7 @@ nav ul {
     text-align: center;
     padding: 250px 0;
     color: aliceblue;
-    text-shadow: #000;
+    text-shadow: -1px 1px 0 #000;
 }
 
 
@@ -92,12 +95,18 @@ nav ul {
     background-size: cover;
     text-align: center;
     height: 300px;
+    color: aliceblue;
+    text-shadow: -1px 1px 0 #000;
 }
+
 .card-2 {
     padding: 1rem 0;
     flex: 1;
-    background-color: blueviolet;
+    background-image: linear-gradient(to bottom right, rgb(14, 33, 48), slategray);
     height: 300px;
+    color: aliceblue;
+    text-shadow: -1px 1px 0 #000;
+    text-align: center;
 }
 .card-3 {
     padding: 1rem 0;
@@ -115,11 +124,13 @@ nav ul {
 #contact-info {
     margin: 20px;
     height: 75px;
+    color: aliceblue;
 }
 
 #about-me {
     margin:20px;
     height: 75x;
+    color: aliceblue;
 }
 
 footer {
