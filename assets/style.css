@@ -13,10 +13,16 @@ header {
     background-image:url(pngtree-technological-sense-geometric-line-simple-image_19419.jpg) ;
     background-size: cover;
     justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+
 }
 
-/* set up grid layout */
-/* repeat function leaves cleaner code */
+header p {
+    color: antiquewhite;
+    text-shadow: 2px 2px 0 black;
+}
+
 main {
  max-width: 100%;
  margin: 10px auto;
@@ -34,15 +40,24 @@ padding: 30px 0;
     color: rgb(214, 213, 212);
 }
 
-nav {
-    margin: 20px;
+h3 {
+    font-weight: bolder;
 }
+
+.nice {
+    color: rgb(245, 226, 207);
+
+}
+
+
 
 /* styling for navigation links */
 nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    margin: 20px;
+  
 
 }
 
@@ -55,7 +70,12 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    padding: 250px 0;
+    color: aliceblue;
+    text-shadow: #000;
 }
+
 
 .row {
     display:flex;
@@ -63,19 +83,63 @@ nav ul {
    margin-bottom: 10px;
 }
 
-.card {
+.card-1 {
+    padding: 1rem 0;
+    flex: 1;
+    background-image: url(d20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+}
+.card-2 {
     padding: 1rem 0;
     flex: 1;
     background-color: blueviolet;
-    aspect-ratio: 1/1;
+    height: 300px;
+}
+.card-3 {
+    padding: 1rem 0;
+    flex: 1;
+    background-color: blueviolet;
+    height: 300px;
+}
+.card-4 {
+    padding: 1rem 0;
+    flex: 1;
+    background-color: blueviolet;
+    height: 300px;
 }
 
+#contact-info {
+    margin: 20px;
+    height: 75px;
+}
+
+#about-me {
+    margin:20px;
+    height: 75x;
+}
+
+footer {
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
     .row {
         flex-wrap: wrap;
     }
-    .card {
+    .card-1 {
+        flex-basis: 100%;
+    }
+    .card-2 {
+        flex-basis: 100%;
+    }
+    .card-3 {
+        flex-basis: 100%;
+    }
+    .card-4 {
         flex-basis: 100%;
     }
     
