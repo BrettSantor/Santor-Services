@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+:root {
+    --main-color: rgb(14, 33, 48);
+    --text-color: rgb(240, 248, 255);
+}
+
 /* header uses flex box instead of grid */
 header {
     display: flex;
@@ -19,14 +24,14 @@ header {
 }
 
 header p {
-    color: antiquewhite;
+    color: var(--text-color);
     text-shadow: 2px 2px 0 black;
 }
 
 main {
  max-width: 100%;
- margin: 10px auto;
- background-color: rgb(14, 33, 48);
+ margin: 0px 0;
+ background-color: var(--main-color);
 }
 
 
@@ -38,7 +43,7 @@ height: auto;
 padding: 30px 0;
    
     text-shadow: 2px 2px 0 #000;
-    color: rgb(214, 213, 212);
+    color: var(--text-color);
 }
 
 h2 {
@@ -47,7 +52,7 @@ h2 {
 }
 
 .nice {
-    color: rgb(245, 226, 207);
+    color: rgb(235, 229, 229);
 
 }
 
@@ -75,7 +80,7 @@ nav ul {
     background-size: cover;
     text-align: center;
     padding: 250px 0;
-    color: aliceblue;
+    color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
 }
 
@@ -95,7 +100,7 @@ nav ul {
     background-size: cover;
     text-align: center;
     height: 300px;
-    color: aliceblue;
+    color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
 }
 
@@ -104,7 +109,7 @@ nav ul {
     flex: 1;
     background-image: linear-gradient(to bottom right, rgb(14, 33, 48), slategray);
     height: 300px;
-    color: aliceblue;
+    color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
     text-align: center;
 }
@@ -113,31 +118,41 @@ nav ul {
     flex: 1;
     background-image: linear-gradient(to bottom right, rgb(14, 33, 48), slategray);
     height: 300px;
-    color: aliceblue;
+    color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
     text-align: center;
 }
 .card-4 {
     padding: 1rem 0;
     flex: 1;
-    background-color: blueviolet;
+    background-image: url(guitar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
     height: 300px;
+    color: var(--text-color);
+    text-shadow: -1px 1px 0 #000;
 }
 
 #contact-info {
-    margin: 20px;
+    margin: 0;
     height: 75px;
-    color: aliceblue;
+    color: var(--text-color);
+    border-color: var(--main-color) ;
 }
 
 #about-me {
-    margin:20px;
+    margin: 20px;
     height: 75x;
-    color: aliceblue;
+    color: var(--text-color);
 }
 
 footer {
     text-align: center;
+    background-color:var(--main-color);
+    color: var(--text-color);
+    border-color: var(--main-color);
 }
 
 @media screen and (max-width: 768px) {
