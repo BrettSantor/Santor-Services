@@ -19,7 +19,7 @@ header {
     background-size: cover;
     justify-content: space-evenly;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
 
 }
 
@@ -71,19 +71,24 @@ nav ul {
 
 .first-project {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
-    height: 500px;
-    background-image: url(keyboard.jpg);
+    /* height: 500px; */
+    /* background-image: url(keyboard.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     text-align: center;
-    padding: 250px 0;
+    /* padding: 250px 0; */
     color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
     transition: 0.5s ease-in-out;
 }
+
+img {
+    width: 100%;
+}
+
 
 .first-project:hover {
     box-shadow: inset 0px 0px 8px aliceblue, 0 0 30px aliceblue;
@@ -196,9 +201,6 @@ footer {
     .card-23 {
         flex-basis: 100%;
     }
-    /* .card-3 {
-        flex-basis: 100%;
-    } */
     .card-4 {
         flex-basis: 100%;
     }
