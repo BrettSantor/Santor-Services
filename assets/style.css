@@ -96,6 +96,16 @@ nav ul {
    margin-bottom: 10px;
 }
 
+.info-row {
+    display: flex;
+    gap: 10px;
+    transition: 1s;
+}
+
+.info-row:hover {
+    box-shadow: inset 0px 0px 30px aliceblue, 0 0 30px aliceblue;
+}
+
 .card-1 {
     padding: 1rem 0;
     flex: 1;
@@ -148,16 +158,25 @@ nav ul {
 }
 
 #contact-info {
+    flex: 1;
     margin: 0;
     height: 75px;
     color: var(--text-color);
     border-color: var(--main-color) ;
+    text-align: center;
+}
+
+pre {
+    user-select: all;
 }
 
 #about-me {
+    flex: 1;
     margin: 20px;
     height: 75x;
     color: var(--text-color);
+    text-align: center;
+    
 }
 
 footer {
@@ -174,12 +193,12 @@ footer {
     .card-1 {
         flex-basis: 100%;
     }
-    .card-2 {
+    .card-23 {
         flex-basis: 100%;
     }
-    .card-3 {
+    /* .card-3 {
         flex-basis: 100%;
-    }
+    } */
     .card-4 {
         flex-basis: 100%;
     }
