@@ -19,13 +19,18 @@ header {
     background-size: cover;
     justify-content: space-evenly;
     width: 100%;
-    /* position: fixed; */
+    position: relative;
 
 }
 
 header p {
     color: var(--text-color);
     text-shadow: 2px 2px 0 black;
+}
+
+.profile {
+    position: absolute;
+    right: 10px;
 }
 
 main {
@@ -41,14 +46,13 @@ h1 {
 width: 100%;
 height: auto;
 padding: 30px 0;
-   
+
     text-shadow: 2px 2px 0 #000;
     color: var(--text-color);
 }
 
 h2 {
     font-weight: bolder;
-    text-shadow: -1px 1px white;
 }
 
 .nice {
@@ -65,32 +69,42 @@ nav ul {
     list-style-type: none;
     margin: 20px;
     text-shadow: -1px 1px 0 white;
-  
+
 
 }
 
 .first-project {
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    /* height: 500px; */
-    /* background-image: url(keyboard.jpg);
+    flex-direction: column;
+    height: 20vh;
+    background-image: url(keyboard.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     text-align: center;
-    /* padding: 250px 0; */
+    padding: 250px 0;
     color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
     transition: 0.5s ease-in-out;
 }
 
-img {
-    width: 100%;
+.top-row a {
+    flex: 1;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: -1px 1px 0 #000;
+    transition: 0.5s ease-in-out;
+
 }
 
 
-.first-project:hover {
+
+.top-row:hover {
     box-shadow: inset 0px 0px 8px aliceblue, 0 0 30px aliceblue;
 }
 
@@ -98,7 +112,7 @@ img {
 .row {
     display:flex;
    gap: 10px;
-   margin-bottom: 10px;
+   margin: 10px;
 }
 
 .info-row {
@@ -111,9 +125,14 @@ img {
     box-shadow: inset 0px 0px 30px aliceblue, 0 0 30px aliceblue;
 }
 
+
+.row a {
+    flex:1
+}
+
+
 .card-1 {
     padding: 1rem 0;
-    flex: 1;
     background-image: url(d20.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -124,6 +143,7 @@ img {
     text-shadow: -1px 1px 0 #000;
     transition: 2s;
 }
+
 
 .card-1:hover {
     height: 150px;
@@ -165,7 +185,7 @@ img {
 #contact-info {
     flex: 1;
     margin: 0;
-    height: 75px;
+    height: 15vh;
     color: var(--text-color);
     border-color: var(--main-color) ;
     text-align: center;
@@ -178,10 +198,10 @@ pre {
 #about-me {
     flex: 1;
     margin: 20px;
-    height: 75x;
+    height: 15vh;
     color: var(--text-color);
     text-align: center;
-    
+
 }
 
 footer {
@@ -204,5 +224,5 @@ footer {
     .card-4 {
         flex-basis: 100%;
     }
-    
+
 }
