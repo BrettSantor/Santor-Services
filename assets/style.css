@@ -82,6 +82,11 @@ nav ul {
     padding: 250px 0;
     color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
+    transition: 0.5s ease-in-out;
+}
+
+.first-project:hover {
+    box-shadow: inset 0px 0px 8px aliceblue, 0 0 30px aliceblue;
 }
 
 
@@ -102,9 +107,14 @@ nav ul {
     height: 300px;
     color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
+    transition: 2s;
 }
 
-.card-2 {
+.card-1:hover {
+    height: 150px;
+}
+
+.card-23 {
     padding: 1rem 0;
     flex: 1;
     background-image: linear-gradient(to bottom right, rgb(14, 33, 48), slategray);
@@ -112,16 +122,13 @@ nav ul {
     color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
     text-align: center;
+    transition: 1s;
 }
-.card-3 {
-    padding: 1rem 0;
-    flex: 1;
-    background-image: linear-gradient(to bottom right, rgb(14, 33, 48), slategray);
-    height: 300px;
-    color: var(--text-color);
-    text-shadow: -1px 1px 0 #000;
-    text-align: center;
+
+.card-23:hover {
+    rotate: 5deg;
 }
+
 .card-4 {
     padding: 1rem 0;
     flex: 1;
@@ -133,6 +140,11 @@ nav ul {
     height: 300px;
     color: var(--text-color);
     text-shadow: -1px 1px 0 #000;
+    transition: 2s;
+}
+
+.card-4:hover {
+    height: 150px;
 }
 
 #contact-info {
