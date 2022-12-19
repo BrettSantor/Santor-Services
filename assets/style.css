@@ -31,6 +31,7 @@ header p {
 .profile {
     position: absolute;
     right: 10px;
+    border-radius: 5%;
 }
 
 main {
