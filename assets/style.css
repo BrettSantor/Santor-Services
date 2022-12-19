@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* created variables to use colors more efficiently */
 :root {
     --main-color: rgb(14, 33, 48);
     --text-color: rgb(240, 248, 255);
@@ -28,6 +28,7 @@ header p {
     text-shadow: 2px 2px 0 black;
 }
 
+/* absolute postion keeps the profile image in the header space */
 .profile {
     position: absolute;
     right: 10px;
@@ -71,8 +72,8 @@ nav ul {
     margin: 20px;
     text-shadow: -1px 1px 0 white;
 
-
 }
+
 
 .first-project {
     display: flex;
@@ -110,6 +111,8 @@ nav ul {
     gap: 10px;
     transition: 1s;
 }
+
+/*transition elements*/
 
 .info-row:hover {
     box-shadow: inset 0px 0px 30px aliceblue, 0 0 30px aliceblue;
@@ -181,6 +184,8 @@ nav ul {
     text-align: center;
 }
 
+/*quality of life added to make coping text easier*/
+
 pre {
     user-select: all;
 }
@@ -200,6 +205,8 @@ footer {
     color: var(--text-color);
     border-color: var(--main-color);
 }
+
+/*media queries to adjust the look of the page to look better on different sized screens*/
 
 @media screen and (max-width:1265px) {
     .profile {
