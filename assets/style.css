@@ -92,17 +92,6 @@ nav ul {
     flex: 1;
 }
 
-.top-row {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    color: var(--text-color);
-    text-shadow: -1px 1px 0 #000;
-    transition: 0.5s ease-in-out;
-
-}
-
-
 
 .top-row:hover {
     box-shadow: inset 0px 0px 8px aliceblue, 0 0 30px aliceblue;
@@ -211,17 +200,20 @@ footer {
     border-color: var(--main-color);
 }
 
+@media screen and (max-width:1265px) {
+    .profile {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .row {
         flex-wrap: wrap;
     }
-    .card-1 {
+    .row a {
         flex-basis: 100%;
     }
-    .card-23 {
-        flex-basis: 100%;
-    }
-    .card-4 {
+    .info-row {
         flex-basis: 100%;
     }
 
