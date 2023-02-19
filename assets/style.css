@@ -92,6 +92,7 @@ nav ul {
 
 .top-row a {
     flex: 1;
+    color: ghostwhite;
 }
 
 
@@ -120,7 +121,8 @@ nav ul {
 
 
 .row a {
-    flex:1
+    flex:1;
+    color: ghostwhite;
 }
 
 
